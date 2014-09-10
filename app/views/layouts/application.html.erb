@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BrockHoughton</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Brock Houghton | Production Designer</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+
+  <%= render 'partials/header' %>
+
+  <%= yield %>
+
+  <%= render 'partials/footer' %>
+</div>
 
 </body>
 </html>
