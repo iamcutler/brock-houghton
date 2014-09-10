@@ -1,0 +1,15 @@
+@mixin transform($statement) {
+  -webkit-transform: $statement;
+     -moz-transform: $statement;
+       -o-transform: $statement;
+      -ms-transform: $statement;
+          transform: $statement;
+}
+
+@mixin transition($statement) {
+  -webkit-transition: $statement;
+     -moz-transition: $statement;
+       -o-transition: $statement;
+      -ms-transition: $statement;
+          transition: $statement;
+}
