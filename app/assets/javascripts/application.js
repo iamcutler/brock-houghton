@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var VIDEOS = (function($) {
+  var timing = 200;
+
+  return {
+    fadePlayBtn: function(event) {
+      var opacity = (event.type == 'mouseleave') ? 1.0 : 0.4;
+
+      $("section.videos ul li .feature-container .play-button").animate({
+        opacity: opacity
+      }, timing)
+    }
+  };
+})(jQuery);
