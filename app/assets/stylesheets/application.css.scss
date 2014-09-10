@@ -49,8 +49,101 @@ html, body {
 }
 
 // 1.0 Globals
+header {
+  // Main header
+  &.main {
+    h1 {
+      font: 34px 'neo-regular';
+      padding: 0;
+      margin: 20px 0 0 0;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #7f7e81;
+      margin: 0;
+    }
+
+    nav.main {
+      float: right;
+
+      a:link, a:visited {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 div.container {
-   width: 900px;
-   padding: 0 30px;
-   margin: 0 auto;
- }
+  width: 900px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+hr {
+  &.slant {
+    margin: 0;
+
+    &.left {
+      -webkit-transform: rotate(0.2deg);
+      -moz-transform: rotate(0.2deg);
+      -o-transform: rotate(0.2deg);
+      transform: rotate(0.2deg);
+    }
+
+    &.right {
+      -webkit-transform: rotate(-0.2deg);
+      -moz-transform: rotate(-0.2deg);
+      -o-transform: rotate(-0.2deg);
+      transform: rotate(-0.2deg);
+      margin-top: -2px;
+    }
+  }
+}
+
+section.divide-line {
+  padding: 20px 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+footer {
+  // Main footer
+  &.main {
+    .copyright {
+      float: left;
+    }
+
+    .credit {
+      float: right;
+    }
+  }
+}
+
+// 2.1 Navigation
+nav {
+  &.main {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+
+        a:link, a:visited {
+          color: #7f7e81;
+          font-size: 24px;
+          font-weight: bold;
+          text-decoration: none;
+        }
+
+        &.period {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
