@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require html5shiv.min
 //= require_tree .
 
 var VIDEOS = (function($) {
