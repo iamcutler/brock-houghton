@@ -1,3 +1,43 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div.container {
+  &.home {
+    text-align: center;
+    padding: 30px 0;
+
+    h1 {
+      font: 50px 'neo-regular';
+      margin: 0px;
+    }
+
+    h2 {
+      color: #7f7e81;
+      font-size: 24px;
+      margin: 0 0 0 0;
+    }
+
+    // Splash arrows image
+    img.home-arrows {
+      margin: 30px 0;
+    }
+
+    // Splash navigation
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+
+        a:link, a:visited {
+          color: #7f7e81;
+          font-size: 24px;
+          text-decoration: none;
+        }
+
+        &.period {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
