@@ -3,12 +3,4 @@
 
 = image_tag 'home-arrows.jpg', class: 'home-arrows'
 
-%ul{class: 'links'}
-  %li
-    = link_to 'reel', ''
-  %li{class: 'period'} .
-  %li
-    = link_to 'archival', ''
-  %li{class: 'period'} .
-  %li
-    = link_to 'contact', ''
+= render 'partials/navigation'
