@@ -1,13 +1,9 @@
 %h3.page-title reel
 
 %section.videos
-  %ul
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
+  - if @videos.count > 0
+    %ul
+      - @videos.each do |video|
+        %li= render 'partials/video', video: video
+  - else
+    %h4{class: 'no-results'} No Current reel
