@@ -1,13 +1,9 @@
 %h3.page-title archival
 
 %section.videos
-  %ul
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
-    %li= render 'partials/video'
+  - if @archive.count > 0
+    %ul
+      - @archive.each do |archive|
+        %li= render 'partials/video', video: archive
+  - else
+    %h4.no-results No current archives
