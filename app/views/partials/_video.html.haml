@@ -2,12 +2,12 @@
   .feature-container
     .front
       %feature
-        = image_tag 'http://cdn.recombu.com/mobile/images/news/M18739/1360772917_w670_h526.jpg', class: 'thumbnail'
+        = image_tag video.image.url(:thumb), class: 'thumbnail'
         .play-button
 
     .back
       %feature
-        = image_tag 'http://cdn.recombu.com/mobile/images/news/M18739/1360772917_w670_h526.jpg', class: 'thumbnail'
+        = image_tag video.image.url(:thumb), class: 'thumbnail'
 
 
 .title= video.title
