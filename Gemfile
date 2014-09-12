@@ -38,6 +38,9 @@ gem 'rspec-rails', group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]
 gem 'database_cleaner', group: [:development, :test]
 
+# Asset uploading
+gem 'paperclip', '~> 4.2.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
