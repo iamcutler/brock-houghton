@@ -13,7 +13,7 @@ class Video < ActiveRecord::Base
   has_attached_file :video,
                     :styles => {
                       :mp4 => {:geometry => "854x510", :format => 'mp4', :streaming => true},
-                      :ogg => {:geometry => "854x510", :format => 'ogg', :streaming => true},
+                      :ogg => {:geometry => "854x510", :format => 'ogv', :streaming => true},
                       :webm => {:geometry => "854x510", :format => 'webm', :streaming => true}
                     },
                     :path => ":rails_root/public/system/media/uploads/:basename.:extension",
