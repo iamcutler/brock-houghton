@@ -21,4 +21,18 @@ ActiveAdmin.register Video do
       end
     end
   end
+
+  form do |f|
+    f.inputs "Video" do
+      f.input :title
+      f.input :director
+      f.input :order
+      f.input :image
+    end
+
+    f.actions
+  end
+
+  # Allow ActiveAdmin admins to freely mass-assign when using strong_parameters
+  permit_params :title, :director, :order, :image
 end
