@@ -40,6 +40,7 @@ gem 'database_cleaner', group: [:development, :test]
 
 # Asset uploading
 gem 'paperclip', '~> 4.2.0'
+gem 'paperclip-ffmpeg'
 gem 'aws-sdk'
 
 # Use ActiveModel has_secure_password

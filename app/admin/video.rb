@@ -1,5 +1,8 @@
 ActiveAdmin.register Video do
   index do
+    column :image do |img|
+      image_tag img.image.url(:thumb), style: 'width: 80px;'
+    end
     column :title
     column :director
     column :archive
@@ -28,11 +31,12 @@ ActiveAdmin.register Video do
       f.input :director
       f.input :order
       f.input :image
+      f.input :video
     end
 
     f.actions
   end
 
   # Allow ActiveAdmin admins to freely mass-assign when using strong_parameters
-  permit_params :title, :director, :order, :image
+  permit_params :title, :director, :order, :image, :video
 end
