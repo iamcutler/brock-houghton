@@ -1,3 +1,19 @@
-// Place all the styles related to the contact controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h6.contact-header {
+  font: 20px 'neo-regular';
+  margin: 0;
+  padding: 0;
+}
+
+table.contact {
+  width: 100%;
+  font-size: 20px;
+
+  td {
+    width: 33%;
+
+    a:link, a:visited {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
