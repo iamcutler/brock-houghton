@@ -6,5 +6,6 @@ Rails.application.routes.draw do
 
   get 'reel', to: 'reel#index', as: :reel
   get 'archival', to: 'archive#index', as: :archival
+  get 'video/:id', to: 'video#show', as: :video
   get 'contact', to: 'contact#index', as: :contact
 end
