@@ -2,7 +2,7 @@ class Video < ActiveRecord::Base
   validates :title, :director, :order, presence: true
   has_attached_file :image,
                     :styles => {
-                      :thumb => "262X200>"
+                      :thumb => "262X262>"
                     },
                     :default_url => "vid_missing.jpg",
                     :path => ":rails_root/public/system/images/uploads/:basename.:extension"
