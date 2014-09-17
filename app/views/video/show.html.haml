@@ -1,2 +1,5 @@
-%h1 Video#show
-%p Find me in app/views/video/show.html.haml
+.video-container
+  %video{id: '', class: 'video-js vjs-defaukt-skin', controls: 'controls', preload: 'none', width: '854px', height: '510px'}
+    %source{src: @video.video.url(:mp4), type: 'video/mp4'}
+    %source{src: @video.video.url(:webm), type: 'video/webm'}
+    %source{src: @video.video.url(:ogg), type: 'video/ogg'}

@@ -11,6 +11,9 @@ FactoryGirl.define do
     title "Direct TV"
     director "John Smith"
     archive 0
+    video_file_name "video.mp4"
+    video_content_type "video/mp4"
+    video_file_size 23014356
     order 1
   end
 
@@ -18,6 +21,9 @@ FactoryGirl.define do
     title { generate(:title_sec) }
     director { generate(:director_sec) }
     archive 0
+    video_file_name "video.mp4"
+    video_content_type "video/mp4"
+    video_file_size 23014356
     order 1
   end
 end
