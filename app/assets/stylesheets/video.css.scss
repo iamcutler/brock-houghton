@@ -1,4 +1,14 @@
 .video-container {
   width: 854px;
   margin: 0 auto;
+
+  video {
+    margin-bottom: 20px;
+  }
+}
+
+.video-information {
+  .title {
+    font: 20px 'neo-regular';
+  }
 }
