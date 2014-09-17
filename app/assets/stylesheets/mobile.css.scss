@@ -1,0 +1,102 @@
+// Mobile responsiveness
+
+// iPad / Tablet
+@media only screen
+and (max-width : 960px) {
+  .container {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  header.main {
+    padding: 0 20px !important;
+  }
+
+  h3.page-title {
+    padding: 0 20px !important;
+  }
+
+  section.videos {
+    padding: 0 20px !important;
+  }
+
+  table.contact {
+    padding: 0 20px !important;
+  }
+
+  footer.main {
+    padding: 0 20px !important;
+  }
+}
+
+// iPhone 5
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px) {
+  .container {
+    width: 100% !important;
+    padding: 0 !important;
+
+    header.main {
+      padding: 0 20px !important;
+
+      // Hide and show mobile navi
+      nav.main {
+        display: none;
+      }
+
+      .mobile-navigation {
+        display: block !important;
+
+        nav.main {
+          display: block !important;
+        }
+      }
+    }
+
+    h3.page-title {
+      padding: 0 20px !important;
+    }
+
+    section.videos {
+      padding: 0 20px !important;
+
+      ul {
+        li {
+          width: 100% !important;
+          text-align: center;
+          margin: 0 !important;
+
+          .feature-container {
+            .front {
+              margin: 0 auto 6px auto !important;
+            }
+          }
+        }
+      }
+    }
+
+    // Video
+    .video-container {
+      width: 100% !important;
+
+      video {
+        width: 100% !important;
+        height: inherit;
+      }
+    }
+
+    .video-information {
+      padding: 0 20px !important;
+    }
+
+    footer.main {
+      padding: 0 20px !important;
+
+      .credit {
+        display: none !important;
+      }
+    }
+  }
+}
+
