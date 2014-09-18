@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Brock Houghton | Production Designer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'videojs/video-js.min', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'mobile', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'videojs/videojs', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+
+  <%= render 'partials/header' %>
+
+  <%= yield %>
+
+  <%= render 'partials/footer' %>
+</div>
+
+<script>
+  videojs.options.flash.swf = "/assets/video-js.swf";
+</script>
+</body>
+</html>
