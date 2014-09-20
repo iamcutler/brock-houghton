@@ -18,24 +18,24 @@
 
 @font-face {
   font-family: 'little-days';
-  src: url('/assets/little_days.eot');
-  src: url('/assets/little_days.eot?#iefix') format('embedded-opentype'),
-  url('/assets/little_days.woff2') format('woff2'),
-  url('/assets/little_days.woff') format('woff'),
-  url('/assets/little_days.ttf') format('truetype'),
-  url('/assets/little_days.svg#little-days') format('svg');
+  src: font_url('little_days.eot');
+  src: font_url('little_days.eot?#iefix') format('embedded-opentype'),
+  font_url('little_days.woff2') format('woff2'),
+  font_url('little_days.woff') format('woff'),
+  font_url('little_days.ttf') format('truetype'),
+  font_url('little_days.svg#little-days') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'neo-regular';
-  src: url('/assets/neord.eot');
-  src: url('/assets/neord.eot?#iefix') format('embedded-opentype'),
-  url('/assets/neord.woff2') format('woff2'),
-  url('/assets/neord.woff') format('woff'),
-  url('/assets/neord.ttf') format('truetype'),
-  url('/assets/neord.svg#neo-regular') format('svg');
+  src: font_url('neord.eot');
+  src: font_url('neord.eot?#iefix') format('embedded-opentype'),
+  font_url('neord.woff2') format('woff2'),
+  font_url('neord.woff') format('woff'),
+  font_url('neord.ttf') format('truetype'),
+  font_url('neord.svg#neo-regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
