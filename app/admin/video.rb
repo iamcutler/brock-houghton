@@ -29,6 +29,7 @@ ActiveAdmin.register Video do
     f.inputs "Video" do
       f.input :title
       f.input :director
+      f.input :archive
       f.input :order
       f.input :image
       f.input :video
