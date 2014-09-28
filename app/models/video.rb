@@ -14,7 +14,11 @@ class Video < ActiveRecord::Base
                     :styles => {
                       :mp4 => {
                         :geometry => "854x510", :format => 'mp4', :streaming => true,
-                        :convert_options => "-vcodec mpeg4"
+                        :convert_options => {
+                          :output => {
+                            :vcodec => 'libx264'
+                          }
+                        }
                       }
                       #:ogg => {:geometry => "854x510", :format => 'ogv', :streaming => true},
                       #:webm => {:geometry => "854x510", :format => 'webm', :streaming => true}
