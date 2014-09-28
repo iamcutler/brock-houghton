@@ -39,5 +39,5 @@ ActiveAdmin.register Video do
   end
 
   # Allow ActiveAdmin admins to freely mass-assign when using strong_parameters
-  permit_params :title, :director, :order, :image, :video
+  permit_params :title, :director, :archive, :order, :image, :video
 end
