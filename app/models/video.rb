@@ -20,7 +20,7 @@ class Video < ActiveRecord::Base
                     :processors => [:ffmpeg, :qtfaststart]
 
   validates_attachment_content_type :video,
-                                    :content_type => ["video/mp4", "video.mov", "video/mpeg","video/mpeg4"]
+                                    :content_type => ["video/mp4", "video/mov", "video/mpeg","video/mpeg4"]
 
   scope :reel, -> { where(archive: false) }
   scope :archive, -> { where(archive: true) }
