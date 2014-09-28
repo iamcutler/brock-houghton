@@ -16,7 +16,7 @@ class Video < ActiveRecord::Base
                         :geometry => "854x510", :format => 'mp4', :streaming => true,
                         :convert_options => {
                           :output => {
-                            :vcodec => 'libx264'
+                            :vcodec => 'mpeg4'
                           }
                         }
                       }
