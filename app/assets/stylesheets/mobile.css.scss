@@ -1,3 +1,4 @@
+@import "lib";
 // Mobile responsiveness
 
 // iPad / Tablet
@@ -70,6 +71,14 @@ and (max-width : 568px) {
           .feature-container {
             .front {
               margin: 0 auto 6px auto !important;
+
+              &:hover {
+                @include transform(rotateY(0deg));
+              }
+            }
+
+            .back {
+              display: none;
             }
           }
         }
