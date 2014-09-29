@@ -41,6 +41,11 @@ and (max-width : 568px) {
     header.main {
       padding: 0 20px !important;
 
+      // Hide social links
+      ul.social {
+        display: none;
+      }
+
       // Hide and show mobile navi
       nav.main {
         display: none;
@@ -50,6 +55,7 @@ and (max-width : 568px) {
         display: block !important;
 
         nav.main {
+          position: inherit;
           display: block !important;
         }
       }

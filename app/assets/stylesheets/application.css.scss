@@ -93,6 +93,8 @@ section.divide-line {
 
 // 1.1 Main Header
 header.main {
+  position: relative;
+
   h1 {
     font: 34px 'neo-regular';
     padding: 0;
@@ -105,8 +107,48 @@ header.main {
     margin: 0;
   }
 
+  ul.social {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      font-size: 20px;
+      list-style: none;
+      vertical-align: middle;
+
+      a:link, a:visited {
+        width: 34px;
+        height: 33px;
+        display: block;
+        text-indent: -9999px;
+        overflow: hidden;
+
+        &.tumblr {
+          background: asset-url('social-icons.png') 0 0 no-repeat;
+
+          &:hover {
+            background-position-y: -36px;
+          }
+        }
+        &.instagram {
+          background: asset-url('social-icons.png') -37px 0 no-repeat;
+
+          &:hover {
+            background-position-y: -36px;
+          }
+        }
+      }
+    }
+  }
+
   nav.main {
-    float: right;
+    position: absolute;
+    top: 30px;
+    right: 20px;
 
     a:link, a:visited {
       font-size: 20px;
