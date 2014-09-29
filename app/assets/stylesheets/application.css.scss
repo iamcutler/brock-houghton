@@ -231,7 +231,7 @@ section.videos {
             position: absolute;
             top: 50%;
             left: 50%;
-            background: url('/assets/play-button.png') no-repeat;
+            background: asset-url('play-button.png') no-repeat;
             width: 68px;
             height: 68px;
             margin: -34px 0 0 -34px;
